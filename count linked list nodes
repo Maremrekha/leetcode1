@@ -1,0 +1,9 @@
+class Solution:
+    # Function to count nodes of a linked list.
+    def getCount(self, head):
+        cnt=0
+        temp=head
+        while(temp):
+            temp=temp.next
+            cnt+=1
+        return cnt
