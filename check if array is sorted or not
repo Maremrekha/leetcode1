@@ -1,0 +1,5 @@
+class Solution:
+    def arraySortedOrNot(self, arr) -> bool:
+        # code here
+        brr=sorted(arr)
+        return brr==arr
