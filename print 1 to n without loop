@@ -1,0 +1,13 @@
+
+class Solution:    
+    #Complete this function
+    def printNos(self,n):
+        #Your code here
+        def numbers(n):
+            if(n==1):
+                print(n,end=" ")
+                return
+            numbers(n-1)
+            print(n,end=" ")
+        numbers(n)
+        
