@@ -1,0 +1,9 @@
+class Solution:
+    def sumOfSeries(self,n):
+        #code here
+        def cube(n):
+            if(n==1):
+                return n**3
+            return n**3+cube(n-1)
+        return cube(n)
+                
