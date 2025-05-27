@@ -1,0 +1,19 @@
+
+class Solution:
+    def longestSubarray(self, arr, k):  
+        # code here
+        d={}
+        sum=0
+        maxi=0
+        for i in range(len(arr)):
+            sum+=arr[i]
+            if(sum==k):
+                maxi=max(maxi,i+1)
+            diff=sum-k
+            if(diff in d):
+                length=i-d[diff]
+                maxi=max(length,maxi)
+            if(sum not in d):
+                d[sum]=i
+        return maxi
+        
